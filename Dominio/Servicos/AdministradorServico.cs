@@ -1,11 +1,11 @@
 ﻿using minimal_api.Dominio.DTOs;
 using minimal_api.Dominio.Entidades;
+using minimal_api.Dominio.Interfaces;
 using minimal_api.Infraestrutura.Db;
-using minimal_api.Infraestrutura.Interfaces;
 
 namespace minimal_api.Dominio.Servicos
 {
-	public class AdministradorServico : IAdministradorServico
+    public class AdministradorServico : IAdministradorServico
 	{
 		private readonly DbContexto _contexto;
 		public AdministradorServico(DbContexto contexto)

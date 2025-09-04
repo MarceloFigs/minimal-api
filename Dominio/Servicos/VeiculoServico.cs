@@ -1,11 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using minimal_api.Dominio.Entidades;
+using minimal_api.Dominio.Interfaces;
 using minimal_api.Infraestrutura.Db;
-using minimal_api.Infraestrutura.Interfaces;
 
 namespace minimal_api.Dominio.Servicos
 {
-	public class VeiculoServico : IVeiculoServico
+    public class VeiculoServico : IVeiculoServico
 	{
 		private readonly DbContexto _contexto;
 		public VeiculoServico(DbContexto contexto)

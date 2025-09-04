@@ -1,13 +1,11 @@
 using minimal_api.Infraestrutura.Db;
 using minimal_api.Dominio.DTOs;
 using Microsoft.EntityFrameworkCore;
-using minimal_api.Infraestrutura.Interfaces;
 using minimal_api.Dominio.Servicos;
 using Microsoft.AspNetCore.Mvc;
-using minimal_api.ModelViews;
+using minimal_api.Dominio.ModelViews;
 using Microsoft.AspNetCore.Authorization;
 using minimal_api.Dominio.Entidades;
-using minimal_api.Enuns;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -16,6 +14,8 @@ using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
+using minimal_api.Dominio.Interfaces;
+using minimal_api.Dominio.Enuns;
 
 var builder = WebApplication.CreateBuilder(args);
 
